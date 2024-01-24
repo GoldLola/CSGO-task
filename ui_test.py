@@ -37,23 +37,4 @@ def test_betAmount(page: Page) -> None:
     page.get_by_placeholder("Enter bet amount...").fill("266666")
     page.get_by_role("button", name="Clear").click()
 
-# def test_multiple_browsers(page: Page) -> None:
-#     page.makepyfile(
-#         """
-#         def test_multiple_browsers(page):
-#             page.set_content('<span id="foo">bar</span>')
-#             assert page.query_selector("#foo")
-#     """
-#     )
-#     result = page.runpytest(
-#         "--browser", "chromium", "--browser", "firefox", "--browser", "webkit"
-#     )
-#     result.assert_outcomes(passed=3)
 
-
-# def test_only_browser(page: Page) -> None:
-#     result = page.runpytest(
-#         "--browser", "chromium", "--browser", "firefox", "--browser", "webkit"
-#     )
-#     result.assert_outcomes(passed=1, skipped=2)
-    
