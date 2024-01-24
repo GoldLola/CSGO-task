@@ -10,16 +10,10 @@ I would particullay pay attention to {LANGUAGE}, {WITHDRAWAL}, {DEPOSIT}. {SIGNI
 
 Describe the tests that you would do and the things you'd pay attention to?
 I would pay more attention to functionality and performance and ofcourse the responsiveness 
-I would also look into the general usabilty of the app by manual testing.
+I would also look into the general usabilty of the app 
 
 
 
 Describe the tests that you would?
 Automated Funtionality test- to assert the visibilty and functionality of some CTA, dialogue boxes and search buttons(if any)
-Performance test- just to check the speed and latency time in which the page loads with all elements – text, images, etc.
 Cross browser testing- to check whether teh website can be accessed through different browers and different device 
-
-##def test_input(page: Page) -> None:
-    page.goto("/")
-    page.click("text=Deposit")
-    page.click("text=CS:GO")
